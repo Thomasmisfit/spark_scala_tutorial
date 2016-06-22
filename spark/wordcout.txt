@@ -1,0 +1,18 @@
+Sentiment analysis is a common application of Natural Language Processing (NLP) methodologies, 
+particularly classification, whose goal is to extract the emotional content in text. 
+In this way, sentiment analysis can be seen as a method to quantify qualitative data with some sentiment score. 
+While sentiment is largely subjective, 
+sentiment quantification has enjoyed many useful implementations, 
+such as businesses gaining understanding about consumer reactions to a product, 
+or detecting hateful speech in online comments.
+
+The simplest form of sentiment analysis is to use a dictionary of good and bad words. 
+Each word in a sentence has a score, 
+typically +1 for positive sentiment and -1 for negative. 
+Then, we simply add up the scores of all the words in the sentence to get a final sentiment total. 
+Clearly, this has many limitations, 
+the most important being that it neglects context and surrounding words.
+ For example, in our simple model the phrase “not good” may be classified as 0 sentiment, 
+ given “not” has a score of -1 and “good” a score of +1. 
+ A human would likely classify “not good” as negative, 
+ despite the presence of “good”.
